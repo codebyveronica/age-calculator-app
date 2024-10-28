@@ -64,16 +64,33 @@ label {
   margin-bottom: 5em;
 }
 
+label.error {
+  color: var(--light-red);
+}
+
+span {
+  letter-spacing: 0;
+  color: var(--light-red);
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+}
+
 input {
   height: 2.75em;
   width: 5em;
+  color: var(--off-black);
   font-family: var(--font);
   font-size: 18px;
   font-weight: 700;
   border: .03em solid var(--light-grey);
   border-radius: .5em;
   padding: .8em;
-  margin-top: .25em;
+  margin: .25em 0;
+}
+
+input.error {
+  border-color: var(--light-red);
 }
 
 input:focus {
@@ -82,8 +99,8 @@ input:focus {
 
 img {
   position: absolute;
-  left: 40%;
-  top: 32%;
+  right: 40%;
+  top: 31%;
   width: 60px;
   background-color: var(--purple);
   border-radius: 50%;
@@ -92,6 +109,7 @@ img {
 
 .age {
   margin: 1em 0 .5em;
+  color: var(--off-black);
   font-size: 3.5rem;
   font-weight: 800;
   font-style: italic;
