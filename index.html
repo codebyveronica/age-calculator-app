@@ -5,31 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-query.css">
+  <script defer src="script.js"></script>
   <title>Age Calculator</title>
 </head>
 <body>
   <div class="container">
     <div class="date">
-      <label for="day">DAY
-        <input type="number" name="day" id="day">
+      <label for="day" id="dayLabel">DAY
+        <input type="number" name="day" id="day" placeholder="DD">
+        <span id="dayFeedbackElement"></span>
       </label>
 
-      <label for="month">MONTH
-        <input type="number" name="month" id="month">
+      <label for="month" id="monthLabel">MONTH
+        <input type="number" name="month" id="month" placeholder="MM">
+        <span id="monthFeedbackElement"><span>
       </label>
 
-      <label for="year">YEAR
-        <input type="number" name="year" id="year">
+      <label for="year" id="yearLabel">YEAR
+        <input type="number" name="year" id="year" placeholder="YYYY">
+        <span id="yearFeedbackElement"></span>
       </label>
 
     </div>
 
-    <img src="images/icon-arrow.svg" alt="down arrow">
+    <div id="calculator">
+      <img src="images/icon-arrow.svg" alt="down arrow">
+    </div>
 
     <div class="age">
-      <p><strong>--</strong> years</p>
-      <p><strong>--</strong> months</p>
-      <p><strong>--</strong> days</p>
+      <p><strong id="yearsTxt">--</strong> years</p>
+      <p><strong id="monthsTxt">--</strong> months</p>
+      <p><strong id="daysTxt">--</strong> days</p>
     </div>
   </div>
 </body>
